@@ -1,5 +1,5 @@
 {
-  "name": "javascript-frameworks-talk",
+  "name": "4-6-18-change-detection-in-js-frameworks",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,7 +20,8 @@
     "eject": "react-scripts eject",
     "prettier":
       "prettier --single-quote --trailing-comma all --no-config --write \"src/**/*.{js,css,md}\"",
-    "precommit": "pretty-quick --staged"
+    "precommit": "pretty-quick --staged",
+    "deploy": "yarn build && surge -p build -d 4-6-18-change-detection-in-js-frameworks.surge.sh"
   },
   "lint-staged": {
     "*.{js,css,md}": ["yarn prettier", "git add"]
