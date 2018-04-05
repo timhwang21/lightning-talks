@@ -1,0 +1,18 @@
+.quote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 0.5em 15%;
+  padding: 1em 1em 1em 2.5em;
+  position: relative;
+  quotes: "“" "”";
+  text-align: start;
+}
+
+.quote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.5em;
+  position: absolute;
+  left: 0.15em;
+}

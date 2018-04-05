@@ -1,0 +1,28 @@
+{
+  "name": "javascript-frameworks-talk",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-presents": "^0.7.10",
+    "react-scripts": "1.1.4"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "prettier": "^1.11.1",
+    "pretty-quick": "^1.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "prettier":
+      "prettier --single-quote --trailing-comma all --no-config --write \"src/**/*.{js,css,md}\"",
+    "precommit": "pretty-quick --staged"
+  },
+  "lint-staged": {
+    "*.{js,css,md}": ["yarn prettier", "git add"]
+  }
+}
